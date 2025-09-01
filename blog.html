@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LotusVelly Blog</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+      background-size: cover;
+      line-height: 1.8;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(245, 249, 246, 0.85); 
+      z-index: -1;
+    }
+
+    header { 
+      background: linear-gradient(135deg, #a43380, #2E7D32);
+      color: white; 
+      padding: 20px; 
+      text-align: center; 
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.7); 
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+      padding: 12px 0;
+      margin: 0;
+    }
+
+    nav ul li { display: inline-block; }
+
+    nav a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: #ff66b2;
+      transition: width 0.3s;
+      margin: auto;
+      border-radius: 3px;
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
+    }
+
+    nav a:hover { color: #ff66b2; }
+
+    .container { 
+      width: 85%; 
+      margin: 20px auto; 
+      padding: 20px; 
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card h2 {
+      color: #2E7D32;
+      margin-bottom: 10px;
+    }
+    .card p, .card ul {
+      margin: 0 0 10px;
+    }
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+
+    .testimonials {
+      background: #fff8f0;
+      padding: 15px;
+      border-left: 5px solid #ff9800;
+      margin: 15px 0;
+      border-radius: 8px;
+      font-style: italic;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer { 
+      background: #333; 
+      color: white; 
+      text-align: center; 
+      padding: 10px; 
+      margin-top: 30px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LotusValley Blog</h1>
+    <p>History & Stories about Lotus Valley Gulawat</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="blog.html">About LotusValley</a></li>
+      <li><a href="Booking.html">Booking</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <img src="./images/gulawat-lotus-valley.jpg" alt="Lotus Valley Gulawat" style="width:100%; border-radius:10px; margin-bottom:20px;">
+
+    <div class="card">
+      <h2>🌸 History of Lotus Valley Gulawat</h2>
+      <p>Lotus Valley (Gulawat Talab) is one of the most serene and beautiful places located near Indore. It is famous for its wide spread lotus flowers that bloom during the season, covering the entire lake with pink beauty.</p>
+      <p>The valley is also known for its scenic views, making it a popular destination for tourists, photographers, and couples looking for pre-wedding shoots.</p>
+      <p>Over the years, Lotus Valley has become a must-visit eco-tourism destination, combining natural charm with cultural significance of the region.</p>
+    </div>
+
+    <div class="card">
+      <h2>📍 Location & Accessibility</h2>
+      <p>Lotus Valley is connected through a single-line road, and visitors usually come here by their personal vehicles.</p>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <p>The peak time to visit Lotus Valley is in mid-December. For the most magical experience of lotus blooms, visit in the morning hours.</p>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Activities to Do</h2>
+      <ul>
+        <li>Boating across the lotus-covered lake</li>
+        <li>Gypsy & horse rides</li>
+        <li>Photography & pre-wedding shoots</li>
+        <li>Bird watching</li>
+        <li>Picnic with family</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🏞 Cultural / Local Significance</h2>
+      <p>The valley is surrounded by rivers, forests, and scenic bridges, making it both culturally and environmentally significant.</p>
+    </div>
+
+    <div class="card">
+      <h2>💡 Tourist Tips</h2>
+      <ul>
+        <li>Entry fees are activity-based.</li>
+        <li>Opening Hours: 6:00 AM – 6:00 PM</li>
+        <li>Follow eco-friendly practices.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🌍 Nearby Attractions</h2>
+      <ul>
+        <li>Pitra Parvat</li>
+        <li>Narmada Gambhir Sangam</li>
+        <li>Yashwant Sagar Dam</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🖼 Gallery</h2>
+      <div class="gallery">
+        <img src="./images/01.jpg" alt="Lotus Bloom">
+        <img src="./images/pexels-duc-nguyen-2149183346-33541918.jpg" alt="Lake View">
+        <img src="./images/forest.jpg" alt="Forest">
+        <img src="./images/pexels-hert-33561826.jpg" alt="Boating">
+        <img src="./images/pexels-rethaferguson-3060703.jpg" alt="Nature Scenery">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💬 Testimonials</h2>
+      <div class="testimonials">“A breathtaking view of endless lotus flowers – truly magical in the morning!”</div>
+      <div class="testimonials">“Best place near Indore for peaceful nature and photography.”</div>
+      <div class="testimonials">“We enjoyed boating and bird watching, perfect family picnic spot.”</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 LotusValley | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
